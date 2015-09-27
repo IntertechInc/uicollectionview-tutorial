@@ -9,6 +9,12 @@
 import UIKit
 
 class TimeEntryCollectionViewController: UICollectionViewController {
+    override func viewDidLoad() {
+        let layout = TimeEntryCollectionLayout()
+        layout.days = sampleDataByDay
+        collectionView?.collectionViewLayout = layout
+        collectionView?.scrollEnabled = false
+    }
     override func viewWillAppear(animated: Bool) {
         collectionView!.reloadData()
     }
@@ -19,7 +25,7 @@ class TimeEntryCollectionViewController: UICollectionViewController {
         return sampleDataByDay[section].entries.count
     }
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("timeEntryCell", forIndexPath: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("timeEntryCell", forIndexPath: indexPath) 
         
         let timeEntry = sampleDataByDay[indexPath.section].entries[indexPath.item]
         let label = cell.viewWithTag(1) as! UILabel
@@ -28,7 +34,7 @@ class TimeEntryCollectionViewController: UICollectionViewController {
         return cell
     }
     override func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-        let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "dayHeaderCell", forIndexPath: indexPath) as! UICollectionReusableView;
+        let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: "dayHeaderCell", forIndexPath: indexPath) ;
         
         let day = sampleDataByDay[indexPath.section];
         let totalHours = day.entries.reduce(0) {(total, entry) in total + entry.hours}

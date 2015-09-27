@@ -14,6 +14,7 @@
 		94DC43641B65586C00478A9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94DC43621B65586C00478A9C /* Main.storyboard */; };
 		94DC43661B65586C00478A9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94DC43651B65586C00478A9C /* Images.xcassets */; };
 		94DC43691B65586C00478A9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94DC43671B65586C00478A9C /* LaunchScreen.xib */; };
+		94FEDDEC1B9372EB002C31C2 /* TimeEntryCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FEDDEB1B9372EB002C31C2 /* TimeEntryCollectionLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		94DC43631B65586C00478A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94DC43651B65586C00478A9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		94DC43681B65586C00478A9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		94FEDDEB1B9372EB002C31C2 /* TimeEntryCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeEntryCollectionLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				94DC435E1B65586C00478A9C /* AppDelegate.swift */,
 				94DC43601B65586C00478A9C /* TimeEntryCollectionViewController.swift */,
+				94FEDDEB1B9372EB002C31C2 /* TimeEntryCollectionLayout.swift */,
 				94CF62F41B7659C900B16DC7 /* TimeEntryTableViewController.swift */,
 				94DC43621B65586C00478A9C /* Main.storyboard */,
 				94DC43651B65586C00478A9C /* Images.xcassets */,
@@ -104,6 +107,8 @@
 		94DC43511B65586C00478A9C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Intertech;
 				TargetAttributes = {
@@ -151,6 +156,7 @@
 				94CF62F51B7659C900B16DC7 /* TimeEntryTableViewController.swift in Sources */,
 				9416B76B1B656084005C767B /* SampleData.swift in Sources */,
 				94DC43611B65586C00478A9C /* TimeEntryCollectionViewController.swift in Sources */,
+				94FEDDEC1B9372EB002C31C2 /* TimeEntryCollectionLayout.swift in Sources */,
 				94DC435F1B65586C00478A9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
