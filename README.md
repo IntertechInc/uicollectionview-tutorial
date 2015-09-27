@@ -1,6 +1,6 @@
 # UICollectionView Tutorial
 
-This code accompanies the [iOS UICollectionView Tutorial](http://www.intertech.com/Blog/ios-uicollectionview-tutorial-1-introducing-custom-layouts/) article series from the Intertech Blog.
+This code accompanies the [iOS UICollectionView Tutorial](http://www.intertech.com/Blog/ios-uicollectionview-tutorial-1-introducing-custom-layouts/) article series from the Intertech Blog. It demonstrates UICollectionView using a basic flow layout and a completely custom layout using UICollectViewLayout.
 
 ## Using the Code
 
