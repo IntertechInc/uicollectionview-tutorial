@@ -16,7 +16,7 @@ class TimeEntryTableViewController : UITableViewController {
         return sampleData.count;
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) 
         let data = sampleData[indexPath.item]
         cell.textLabel?.text = data.0
         cell.detailTextLabel?.text = "\(data.1) (\(data.2))"
